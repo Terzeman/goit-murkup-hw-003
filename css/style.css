@@ -56,6 +56,7 @@ img {
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
+
     margin-left: auto;
     margin-right: auto;
    }
@@ -75,7 +76,7 @@ img {
     height: 80px;
     margin-left: auto;
     margin-right: auto;
-    border-bottom: blue;
+    border-bottom: 1px solid #EEEEEE;
 
     background-color: var(--primary-white-color);
 }    
@@ -295,9 +296,6 @@ img {
     letter-spacing: 0.03em;
 }
 
-.img{
-}
-
 /* Footer */
 
 .footer{
@@ -308,12 +306,12 @@ img {
     background-color: var(--back-ground-color);
 }
 
-
+.box {
+    padding-top: 60px;
+    margin-left: 215px;
+}
 
 .secondary-logo{
-    margin-left: 215px;
-    margin-top: 60px;
-
     color: var(--primary-white-color);
     font-family: var(--secondary-font);
     font-weight: 700;
@@ -328,9 +326,6 @@ img {
 }
 
 .address{
-    margin-left: 215px;
-    margin-top: 20px;
-
     color: var(--primary-white-color);
     font-family: 'Roboto';
     font-style: normal;
@@ -342,8 +337,6 @@ img {
 }
 
 .contact {
-    margin-left: 215px;
-
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
@@ -360,6 +353,9 @@ img {
 
 .list-btn {
     display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+  
 
     list-style: none;
 }
@@ -373,7 +369,9 @@ img {
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
-    letter-spacing: 0.03em; 
+    letter-spacing: 0.03em;
+    padding: 6px 22px; 
+    margin-left: 8px;
 }
 
 .btn:hover, .btn:focus{
@@ -382,10 +380,29 @@ img {
 }
 
 .list-card {
+    padding: 0;
+    margin: 0;   
+
     list-style: none;
 
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+
+.list-card > .item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    border: 1px solid #EEEEEE;
+}
+
+.card-content {
+    padding: 20px;
 }
 
 .slogan{
