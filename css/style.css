@@ -111,7 +111,6 @@ img {
     color: var(--accent-color);
 }
 
-
 .header-link{
     text-decoration: none;
     color: var(--primary-text-color);
@@ -125,10 +124,6 @@ img {
 .current{
     color: var(--accent-color);
 }
-
-/* .container{
-    display: flex;
-} */
 
 .list-contact{
     display: flex;
@@ -300,7 +295,7 @@ img {
 
 .footer{
     display: block;
-    width: 1600px;
+    
     height: 252px;
    
     background-color: var(--back-ground-color);
