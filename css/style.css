@@ -70,7 +70,6 @@ img {
 
 .header{
     display: flex;
-    justify-content:space-around;
     align-items: center;
     width: 1600px;
     height: 80px;
@@ -81,14 +80,19 @@ img {
     background-color: var(--primary-white-color);
 }    
 
+.head {
+    justify-content: space-between;
+}
+
 .nav-list {
     display: flex;
     align-items: center;
+    padding: 0;
 
     list-style: none;
 }
 
-.nav-item {
+.nav-item:not(:first-child) {
     margin-left: 50px;
 }
 
@@ -118,7 +122,10 @@ img {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+}
 
+.header-link:hover, :focus {
+    color: var(--accent-color);
 }
 
 .current{
@@ -130,16 +137,27 @@ img {
 
     list-style: none;
     align-items: center;
+    justify-content: flex-end;
+}
+
+.list-contact > .mail-tel {
+    margin-left: 50px;
 }
 
 .contact{
-    /* margin-left: 50px; */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
 
     color: var(--secondary-text-color);
     text-decoration: none;
 }
 
-.contact:hover{
+.contact:hover, 
+.contact:focus {
     color: var(--accent-color);
 }
 
@@ -295,7 +313,6 @@ img {
 
 .footer{
     display: block;
-    
     height: 252px;
    
     background-color: var(--back-ground-color);
@@ -303,7 +320,11 @@ img {
 
 .box {
     padding-top: 60px;
-    margin-left: 215px;
+    display: block;
+}
+
+.user {
+    margin-top: 20px;
 }
 
 .secondary-logo{
@@ -331,14 +352,14 @@ img {
     text-decoration: none;
 }
 
-.contact {
+/* .contact {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-}
+} */
 
 /* portfolio */
 
@@ -369,7 +390,8 @@ img {
     margin-left: 8px;
 }
 
-.btn:hover, .btn:focus{
+.btn:hover, 
+.btn:focus{
     background-color: var(--accent-color);
     color: var(--primary-white-color);
 }
