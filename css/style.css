@@ -209,17 +209,24 @@ img {
 
 .about{
     background: var(--primary-white-color);
-    width: 1170px;
+   
     margin-right: auto;
     margin-left: auto;
 }
 
 .about-list{
+    padding: 0;
+    margin: 0;
+
     display: flex;
+    flex-wrap: wrap;
+
     list-style: none;
+    margin-left: -30px;
 }
 
-.about-list li{
+.about-list > .more {
+    box-sizing: calc(100% / 4 -30px);
     margin-left: 30px;
 }
 
@@ -251,15 +258,23 @@ img {
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
 .img-list{
+    padding: 0;
+    margin: 0;
+
     display: flex;
+    flex-wrap: wrap;
+
     list-style: none;
+    margin-left: -30px;
 }
 
-.img-list li {
-     margin-left: 30px;
+.img-list > .picture {
+   box-sizing: calc(100% / 3 -30px);
+   margin-left: 30px;
 }
 
 /* Team */
