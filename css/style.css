@@ -30,7 +30,7 @@ h4,
 h5,
 h6,
 p {
- margin-top: 0;
+ margin: 0;
 }
 
 .list{
@@ -51,8 +51,6 @@ img {
    }
 
 .container{
-    display: flex;
-
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -71,16 +69,12 @@ img {
 .header{
     display: flex;
     align-items: center;
-    width: 1600px;
     height: 80px;
-    margin-left: auto;
-    margin-right: auto;
     border-bottom: 1px solid #EEEEEE;
-
-    background-color: var(--primary-white-color);
 }    
 
 .head {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -147,7 +141,7 @@ img {
 .contact{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 500;
+    font-weight: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -165,23 +159,19 @@ img {
 /* Main Заголовок */
 
 .content{
-    height: 600px;
-    left: 0px;
-    top: 80px;
+    padding-bottom: 200px;
+    padding-top: 200px;
     text-align: center;
-    align-items: center;
-    
     background-color: var(--back-ground-color);
 }
 
 .title{
-    padding-top: 200px;
-    
     color: var(--primary-white-color);
     font-family: var(--main-font);
     font-size: 44px;
     line-height: 1.36;
-
+    width: 696px;
+    margin: 0 auto;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 }
@@ -190,19 +180,16 @@ img {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
     font-family: 'Roboto';
-    /* width: 136px;
-    height: 30px; */
     font-size: 16px;
     line-height: 1.88;
-    text-align: center;
+    font-weight: 500;
+    border: none;
     letter-spacing: 0.06em;
     align-items: center;
     border-radius: 4px;
+    margin-top: 40px;
     width: 200px;
     height: 50px;
-    left: 700px;
-    top: 430px;
-  
 }
 
 /* About */
@@ -251,6 +238,10 @@ img {
 
 }
 
+.job {
+    padding-top: 0;
+}
+
 .subtitle{
     color: var(--primary-text-color);
     font-family: 'Roboto';
@@ -266,7 +257,6 @@ img {
     margin: 0;
 
     display: flex;
-    flex-wrap: wrap;
 
     list-style: none;
     margin-left: -30px;
@@ -311,8 +301,7 @@ img {
     margin-left: 30px;
 
     list-style: none;
-
-    border: 1px solid #EEEEEE;
+    background-color: var(--primary-white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -342,19 +331,18 @@ img {
 /* Footer */
 
 .footer{
-    display: block;
-    height: 252px;
+    padding-top: 60px;
+    padding-bottom: 60px;
    
     background-color: var(--back-ground-color);
 }
 
-.box {
-    padding-top: 60px;
-    display: block;
-}
-
 .user {
     margin-top: 20px;
+}
+
+.element:not(last-child) {
+    margin-bottom: 9px;
 }
 
 .secondary-logo{
@@ -393,9 +381,12 @@ img {
     display: flex;
     justify-content: center;
     margin-bottom: 56px;
-  
 
     list-style: none;
+}
+
+.item-btn:not(last-child) {
+    margin-left: 8px;
 }
 
 .btn{
@@ -403,13 +394,13 @@ img {
     background: var(--secondary-bg-color);
     border-radius: 4px;
     cursor: pointer;
+    border: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     padding: 6px 22px; 
-    margin-left: 8px;
 }
 
 .btn:hover, 
@@ -436,12 +427,12 @@ img {
     margin-top: 30px;
 }
 
-.card {
-    border: 1px solid #EEEEEE;
-}
 
 .card-content {
-    padding: 20px;
+    padding: 20px 24px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .slogan{
