@@ -92,6 +92,7 @@ img {
     display: flex;
     align-items: center;
     padding: 0;
+    margin: 0;
 
     list-style: none;
 }
@@ -151,7 +152,7 @@ img {
 .contact{
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: normal;
+    font-weight: 500;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -353,9 +354,13 @@ img {
     margin-top: 20px;
 }
 
-.element:not(last-child) {
+.element {
     margin-bottom: 9px;
 }
+
+.element:last-child {
+    margin-bottom: 0;
+} 
 
 .secondary-logo{
     color: var(--primary-white-color);
